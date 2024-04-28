@@ -506,6 +506,7 @@ Supported Locales
 * pl
 * pt
 * pt-BR
+* ro
 * ru
 * sk
 * sv

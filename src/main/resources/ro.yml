@@ -1,0 +1,251 @@
+# encoding: utf-8
+ro:
+  faker:
+    address:
+      country_code: ['RO']
+      street_prefix:
+        - "Aleea"
+        - "Strada"
+        - "Bulevardul"
+      street_root:
+        - "Stadion"
+        - "Gării"
+        - "Eternitatii"
+        - "Actorilor"
+        - "Florilor"
+        - "Pictorilor"
+        - "Scriitorilor"
+        - "Muzicienilor"
+        - "Arhitecților"
+        - "Artiștilor"
+      street_name:
+        - "#{street_prefix} #{street_root}"
+      street_address:
+        - " #{street_name} nr. #{building_number}"
+        - " #{street_name} nr. #{building_number}, #{secondary_address}"
+      building_number: [ '###', '##', '#' ]
+      secondary_address: [ 'Apt. ##, etaj #' ]
+      postcode: [ '#####' ]
+      state:
+        - "Botoșani"
+        - "Alba"
+        - "Arad"
+        - "Argeș"
+        - "Bacău"
+        - "Bihor"
+        - "Bistrița-Năsăud"
+        - "Brașov"
+        - "Brăila"
+        - "București"
+        - "Buzău"
+        - "Caraș-Severin"
+        - "Călărași"
+        - "Cluj"
+        - "Constanța"
+        - "Covasna"
+        - "Dâmbovița"
+        - "Dolj"
+        - "Gorj"
+        - "Galați"
+        - "Giurgiu"
+        - "Harghita"
+        - "Hunedoara"
+        - "Ialomița"
+        - "Iași"
+        - "Ilfov"
+        - "Maramureș"
+        - "Suceava"
+        - "Olt"
+        - "Mehedinți"
+        - "Mureș"
+        - "Neamț"
+        - "Prahova"
+        - "Sibiu"
+        - "Satu Mare"
+        - "Sălaj"
+        - "Timiș"
+        - "Vaslui"
+        - "Tulcea"
+        - "Vrancea"
+        - "Telorman"
+        - "Vâlcea"
+      city_prefix:
+        - "Sat"
+        - "Comuna"
+        - "Oraș"
+      city_name:
+        - "Botoșani"
+        - "Iași"
+        - "Bacău"
+        - "Alba Iulia"
+        - "Arad"
+        - "București"
+        - "Cluj"
+        - "Constanța"
+        - "Sibiu"
+        - "Vaslui"
+        - "Galați"
+        - "Buzău"
+        - "Oradea"
+        - "Craiova"
+        - "Brăila"
+        - "Pitești"
+        - "Baia Mare"
+        - "Satu Mare"
+        - "Timișoara"
+        - "Slatina"
+        - "Giurgiu"
+        - "Deva"
+        - "Hunedoara"
+        - "Roman"
+        - "Suceava"
+      city:
+        - "#{city_name}"
+      full_address:
+        - "#{city} #{street_address} nr. #{building_number}"
+        - "#{city} #{street_address} #{secondary_address} nr. #{building_number}"
+      default_country: [ Romania ]
+
+    color:
+      name:
+        - "alb"
+        - "galben"
+        - "roșu"
+        - "verde"
+        - "albastru"
+        - "portocaliu"
+        - "maro"
+        - "roz"
+        - "negru"
+        - "mov"
+        - "lila"
+
+    compass:
+      cardinal:
+        word: [ 'Nord', 'Sud', 'Est', 'Vest' ]
+        abbreviation: [ 'N', 'S', 'E', 'V' ]
+        azimuth: [ '0', '90', '180', '270' ]
+      ordinal:
+        word: [ 'Nord-Est', 'Sud-Est', 'Sud-Vest', 'Nord-Vest' ]
+        abbreviation: [ 'NE', 'SE', 'SV', 'NV' ]
+        azimuth: [ '45', '135', '225', '315' ]
+      direction:
+        - "#{Compass.cardinal.word}"
+        - "#{Compass.ordinal.word}"
+      abbreviation:
+        - "#{Compass.cardinal.abbreviation}"
+        - "#{Compass.ordinal.abbreviation}"
+      azimuth:
+        - "#{Compass.cardinal.azimuth}"
+        - "#{Compass.ordinal.azimuth}"
+
+    company:
+      suffix:
+        - "SRL"
+        - "SA"
+        - "SpA"
+      name:
+        - "#{Name.last_name} #{suffix}"
+
+    demographic:
+      sex: [ "Bărbat", "Femeie" ]
+
+    internet:
+      free_email: [ gmail.com ]
+      domain_suffix: [ com, ro, eu, info, net, org ]
+
+    gender:
+      binary_types: [ "Masculin", "Feminin" ]
+
+    measurement:
+      metric_height: [ "milimetru", "centimetru", "metru" ]
+      metric_length: [ "milimetru", "centimetru", "decimetru", "metru", "decametru", "hectometru", "kilometru" ]
+      metric_volume: [ "mililitru", "centilitru", "decilitru", "litru", "decalitru", "hectolictru", "metru cub" ]
+      metric_weight: [ "miligram", "centigram", "decigram", "gram", "decagram", "hectogram", "kilogram", "tona", "kilotona" ]
+
+    name:
+      male_first_name:
+        - "Albert"
+        - "Matei"
+        - "Toma"
+        - "Ion"
+        - "Petru"
+        - "Nicolae"
+        - "Alexandru"
+        - "Alex"
+        - "Cristian"
+        - "Teodor"
+        - "Tudor"
+        - "Paul"
+        - "Felix"
+        - "Dumitru"
+        - "Alin"
+        - "Filip"
+        - "Emil"
+        - "Emilian"
+        - "Florin"
+        - "Liviu"
+        - "Mircea"
+        - "Ștefan"
+        - "Anton"
+      female_first_name:
+        - "Albeta"
+        - "Ioana"
+        - "Nicoleta"
+        - "Alexandra"
+        - "Crina"
+        - "Mihaela"
+        - "Cristina"
+        - "Teodora"
+        - "Antonia"
+        - "Anca"
+        - "Ana"
+        - "Ada"
+        - "Bianca"
+        - "Roxana"
+        - "Paula"
+        - "Iustina"
+        - "Alina"
+        - "Emilia"
+        - "Floarea"
+        - "Florina"
+        - "Adela"
+        - "Beatrice"
+        - "Felicia"
+        - "Lidia"
+      last_name:
+        - "Ionescu"
+        - "Popescu"
+        - "Vasilescu"
+        - "Marinescu"
+        - "Nicolescu"
+        - "Predescu"
+        - "Petrescu"
+      prefix:
+        - "Dr"
+        - "Prof"
+        - "Ing"
+        - "Univ"
+      title:
+        job:
+          - "Profesor"
+          - "Arhitect"
+          - "Programator"
+          - "Manager"
+          - "Director"
+      name:
+        - "#{prefix} #{first_name} #{last_name}"
+        - "#{first_name} #{last_name}"
+        - "#{last_name} #{first_name}"
+      name_with_middle:
+        - "#{prefix} #{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
+        - "#{first_name} #{last_name} #{last_name}"
+    phone_number:
+      formats:
+        - '## #######'
+      formats_international:
+        - '+40 ### ### ###'
+        - '004 ### ### ###'
